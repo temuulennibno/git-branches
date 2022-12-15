@@ -8,10 +8,19 @@
   </head>
   <body>
     <script>
-      
+      let n = 10;
+      let k = "";
+      for (let i = 1; i <= n; i++) {
+        for (j = 1; j <= n; j++) {
+          if (i == 1 || i == n || j == 1 || j == n) {
+            k += "*";
+          } else {
+            k += " ";
+          }
+        }
+        k += "\n";
+      }
+      console.log(k);
     </script>
-    <div>
-      hi 
-    </div>
   </body>
 </html>
